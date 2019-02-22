@@ -203,7 +203,7 @@
       ],
       "layout": {},
       "paint": {
-        "line-color": "#041326"
+        "line-color": "rgba(176, 213, 81, 1)"
       }
     },
     {
@@ -225,7 +225,7 @@
       "minzoom": 11,
       "layout": {},
       "paint": {
-        "fill-color": "#1d3244"
+        "fill-color": "rgba(233, 169, 56, 1)"
       }
     },
     {
@@ -240,7 +240,7 @@
       },
       "paint": {
         "line-color": "rgba(10, 211, 236, 0.6)",
-        "line-width": 0.8,
+        "line-width": 3,
         "line-opacity": {
           "stops": [
             [
@@ -361,6 +361,37 @@
       }
     },
     {
+      "id": "roads 0 Local Road-glow",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "b70308493053f7bbb91b528ae2a71241"
+      },
+      "source": "composite",
+      "source-layer": "roads",
+      "minzoom": 5,
+      "filter": [
+        "all",
+        [
+          "==",
+          "level",
+          "0"
+        ],
+        [
+          "==",
+          "type",
+          "Local"
+        ]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "rgba(197, 25, 25, 1)",
+        "line-width": 1
+      }
+    },
+    {
       "id": "roads 0 Minor Road",
       "type": "line",
       "metadata": {
@@ -388,31 +419,69 @@
       },
       "paint": {
         "line-color": "#000000",
-        "line-width": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          5,
-          0.35,
-          10,
-          1.75,
-          14,
-          2,
-          15,
-          5.5,
-          17,
-          20,
-          22,
-          100
+        "line-width": 6
+      }
+    },
+    {
+      "id": "roads 0 Minor Road-glow",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "b70308493053f7bbb91b528ae2a71241"
+      },
+      "source": "composite",
+      "source-layer": "roads",
+      "minzoom": 5,
+      "filter": [
+        "all",
+        [
+          "==",
+          "level",
+          "0"
+        ],
+        [
+          "==",
+          "type",
+          "Minor"
         ]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "rgba(234, 122, 175, 1)",
+        "line-width": 1
       }
     },
     {
       "id": "roads 0 B Road",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "b70308493053f7bbb91b528ae2a71241"
+      },
+      "source": "composite",
+      "source-layer": "roads",
+      "minzoom": 5,
+      "filter": [
+        "all",
+        [
+          "==",
+          "level",
+          "0"
+        ],
+        [
+          "==",
+          "type",
+          "B Road"
+        ]
+      ],
+      "layout": {},
+      "paint": {
+        "line-width": 6
+      }
+    },
+    {
+      "id": "roads 0 B Road-glow",
       "type": "line",
       "metadata": {
         "mapbox:group": "b70308493053f7bbb91b528ae2a71241"
@@ -438,28 +507,8 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#000000",
-        "line-width": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          5,
-          0.35,
-          10,
-          1.75,
-          14,
-          2,
-          15,
-          5.5,
-          17,
-          20,
-          22,
-          100
-        ]
+        "line-color": "rgba(234, 122, 175, 1)",
+        "line-width": 1
       }
     },
     {
@@ -490,27 +539,38 @@
       },
       "paint": {
         "line-color": "#000000",
-        "line-width": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          5,
-          0.35,
-          10,
-          1.75,
-          14,
-          2,
-          15,
-          5.5,
-          17,
-          20,
-          22,
-          100
+        "line-width": 6
+      }
+    },
+    {
+      "id": "roads 0 A Road-glow",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "b70308493053f7bbb91b528ae2a71241"
+      },
+      "source": "composite",
+      "source-layer": "roads",
+      "minzoom": 5,
+      "filter": [
+        "all",
+        [
+          "==",
+          "level",
+          "0"
+        ],
+        [
+          "==",
+          "type",
+          "A Road"
         ]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "rgba(234, 122, 175, 1)",
+        "line-width": 1
       }
     },
     {
